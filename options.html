@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <link href = "ks.css" rel="stylesheet" />
+        
+        <script defer src = "tabs.js"></script>
+        <script defer src="functions.js"></script>
+        <script defer src="options.js"></script>
+        
+    </head>
+    <body>
+        <br>
+        <div class = "container">
+            <span id = 'alert'></span>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <h6>The Blacklisted Domain goes here!!!</h6>
+                <div class="margin-top-10 col-6" id = 'blr'>
+                    <ul id='textArea' class="listbox" size="15"></ul>
+                </div>
+                <div class = "col-6">
+                    <input type = "submit" class="btn btn-danger" id = "resetBL" value = "Clear Blacklist">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class = container>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control mb-2" id="blacklist" placeholder="Enter Site to be blacklisted !!!" style="width:80%;">
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="time" placeholder="Enter Time (hh:mm)" style="width:60%;">
+                </div>
+                <div class="col-sm-3"><br>
+                    <button type="submit" class="btn btn-primary mb-2" id = "submit" style="margin-left: 0px;">Submit</button>
+                </div>
+                <div class="col-3">
+                    <button type="submit" class="btn btn-danger mb-2" id = "reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
